@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  height: 80vh;
+  color: white;
+  border-radius: 50px;
+  margin: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 0.5px;
+  transition: all 700ms ease-in;
+  cursor: pointer;
+}
+.panel h3 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 24px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
