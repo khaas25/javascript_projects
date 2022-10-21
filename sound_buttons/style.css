@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(161, 100, 223);
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
